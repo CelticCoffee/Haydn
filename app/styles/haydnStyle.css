@@ -34,3 +34,14 @@ img {
   font-family: 'Questrial', sans-serif;
   font-size: 1.25em;
 }
+
+/*.splashPianoteaser {
+  z-index: 6000;
+}*/
+.pianoTeaser {
+  z-index: 6000;
+  position: absolute;
+  max-width: 25%;
+  top: 55%;
+  left: 6%;
+}
