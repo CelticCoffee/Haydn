@@ -1,6 +1,5 @@
 body {
   background-color: black;
-
 }
 
 img {
@@ -29,7 +28,7 @@ img {
 .splashTopLogo {
   color: white;
   position: absolute;
-  top: -.5em;
+  top: 1em;
   right: 1.5em;
   font-family: 'Questrial', sans-serif;
   font-size: 1.25em;
@@ -45,3 +44,12 @@ img {
   top: 55%;
   left: 6%;
 }
+
+/***************************/
+/********Haydn Quote********/
+/***************************/
+.haydnRowQuote {
+  background-color: white;
+}
+
+.
