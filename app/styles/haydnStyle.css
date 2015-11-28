@@ -50,6 +50,28 @@ img {
 /***************************/
 .haydnRowQuote {
   background-color: white;
+  padding: 2em;
 }
 
-.
+.haydnQuote h4 {
+  margin-top: -.5em;
+  font-size: 1.55em;
+}
+
+.colorText {
+color:  #cc9933;
+padding-left: 1.5em;
+}
+
+.author p{
+margin-left: -2em;
+text-align: left;
+font-size: 1.25em;
+
+}
+/***************************/
+/********Carousel********/
+/***************************/
+.pianoPic {
+  width:599px;
+}
