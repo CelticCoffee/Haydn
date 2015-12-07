@@ -38,3 +38,45 @@ $grid-gutter-width: 0;
     // TODO use brand colors
   }
 }
+
+//sand and light row //
+.viewSpray {
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 40%;
+  margin-top: 25%;
+  text-transform: uppercase;
+}
+
+.sprayLightPic {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.overlaySprayLight {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.yellowTextBox {
+  background-color: #cc9933;
+  padding: 2em;
+}
+
+.videoArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 30%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+}
+
+.sandPaint {
+  color: white;
+  text-transform: uppercase;
+}
