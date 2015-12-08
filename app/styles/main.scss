@@ -213,8 +213,16 @@ $grid-gutter-width: 0;
   p {
     padding: 2em;
   }
+}
 
+.instaPics {
+  li {
+  display: inline-block;
+}
+}
 
+.smallPics {
+  width: 145px;
 }
 
 .footer {
