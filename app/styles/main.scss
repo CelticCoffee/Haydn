@@ -80,3 +80,23 @@ $grid-gutter-width: 0;
   color: white;
   text-transform: uppercase;
 }
+
+.mapText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5em;
+  font-size: 2em;
+  z-index: 5000;
+
+  color: white;
+  text-transform: uppercase;
+}
+
+.pdxMap2 {
+  position: absolute;
+
+}
