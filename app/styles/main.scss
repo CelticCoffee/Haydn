@@ -13,6 +13,9 @@ $slick-next-character: 'N';
 $slick-font-path: '../fonts/';
 $slick-loader-path: "/img/"; // TODO automate placement of slick ajax-loader.gif in app/img
 
+.old-piano-row {
+  max-height: 3em;
+}
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
