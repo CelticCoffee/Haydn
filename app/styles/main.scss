@@ -2,12 +2,22 @@
   font-family: 'Questrial', sans-serif;
 }
 
+// boostrap customization
 $icon-font-path: '../fonts/';
-
 $grid-gutter-width: 0;
+
+
+// slick carousel customization
+$slick-prev-character: 'P';
+$slick-next-character: 'N';
+$slick-font-path: '../fonts/';
+$slick-loader-path: "/img/"; // TODO automate placement of slick ajax-loader.gif in app/img
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+@import "bower_components/slick-carousel/slick/slick-theme.scss"; // needed?
 // endbower
 
 // This is to make the rows full-bleed
