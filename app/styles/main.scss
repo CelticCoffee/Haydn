@@ -40,6 +40,10 @@ $grid-gutter-width: 0;
 }
 
 //sand and light row //
+.hero_container {
+  position: relative;
+}
+
 .viewSpray {
   position: absolute;
   color: white;
@@ -85,7 +89,6 @@ $grid-gutter-width: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   margin-top: 5em;
@@ -97,11 +100,12 @@ $grid-gutter-width: 0;
 
 .pdxMap2 {
   position: absolute;
+  margin-top: 5%;
 }
 
 .bluePrintYellow {
   width: 100%;
-  padding: 55px;
+  padding: 45px;
   margin-top: 68%;
   position: absolute;
   z-index: 5000;
@@ -111,7 +115,7 @@ $grid-gutter-width: 0;
 
 .blueprint {
   position: absolute;
-  margin-top: 92%;
+  margin-top: 85%;
   z-index: 100;
 }
 
@@ -122,6 +126,61 @@ $grid-gutter-width: 0;
 
 .pianoSketch {
   position: absolute;
-  margin-top: 90%;
+  margin-top: 85%;
   z-index: 5000;
+}
+
+.drawLines {
+  position: absolute;
+  z-index: 5000;
+  margin-top: 150%;
+}
+
+.graphiti {
+  position: absolute;
+  z-index: 6000;
+  margin-top: 68%;
+  background-color: white;
+  padding: 1em;
+}
+
+.typography {
+  background-color: #cc9933;
+  margin-top: 75%;
+
+  // padding-top: 75px;
+
+  h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3em;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 4em;
+    padding-top: 1em;
+  }
+}
+
+.typographyImg {
+  width: 100%;
+  height: auto;
+  margin: 0;
+
+}
+
+
+.footer {
+  p {
+    position: absolute;
+    color: white;
+    margin-top: 75%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 6000;
+  }
 }
