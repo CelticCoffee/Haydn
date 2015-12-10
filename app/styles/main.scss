@@ -15,6 +15,76 @@ $grid-gutter-width: 0;
     padding: 0px;
 }
 
+body {
+  background-color: black;
+}
+
+img {
+    width: 100%;
+}
+
+.hero_container {
+  position: relative;
+}
+
+
+/*the HAYDN*/
+.haydnLogo {
+  max-width: 30%;
+  position:absolute;
+  top: 41%;
+  left: 6%;
+
+}
+
+/*//the splash logo*/
+.splashTopLogo {
+  color: white;
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.25em;
+}
+
+/*.splashPianoteaser {
+  z-index: 6000;
+}*/
+.pianoTeaser {
+  z-index: 6000;
+  position: absolute;
+  max-width: 25%;
+  top: 55%;
+  left: 6%;
+}
+
+/***************************/
+/********Haydn Quote********/
+/***************************/
+.haydnRowQuote {
+  background-color: white;
+  padding: 2em;
+}
+
+.haydnQuote h4 {
+  margin-top: -.5em;
+  font-size: 1.55em;
+}
+
+.colorText {
+  color:  #cc9933;
+  padding-left: 1.5em;
+}
+
+.author {
+  p{
+    margin-left: -2em;
+    text-align: left;
+    font-size: 1.25em;
+  }
+}
+
+
 // this gives the placeholder rows some height.
 .placeholder-row {
     min-height: 2em;
@@ -37,11 +107,6 @@ $grid-gutter-width: 0;
     font-weight: 200;
     // TODO use brand colors
   }
-}
-
-//sand and light row //
-.hero_container {
-  position: relative;
 }
 
 .viewSpray {
@@ -91,7 +156,7 @@ $grid-gutter-width: 0;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  margin-top: 5em;
+  margin-top: 1em;
   font-size: 2em;
   z-index: 5000;
   color: white;
@@ -99,54 +164,31 @@ $grid-gutter-width: 0;
 }
 
 .pdxMap2 {
-  position: absolute;
-  margin-top: 5%;
+  // position: absolute;
+  // margin-top: 5%;
 }
 
 .bluePrintYellow {
+  // position: absolute;
+  padding: 25px;
   width: 100%;
-  padding: 45px;
-  margin-top: 68%;
-  position: absolute;
-  z-index: 5000;
+  // z-index: 5000;
   background-color: #cc9933;
-
-}
-
-.blueprint {
-  position: absolute;
-  margin-top: 85%;
-  z-index: 100;
-}
-
-.paintingMapPiano {
-  position: absolute;
-  margin-top:34%;
-}
-
-.pianoSketch {
-  position: absolute;
-  margin-top: 85%;
-  z-index: 5000;
-}
-
-.drawLines {
-  position: absolute;
-  z-index: 5000;
-  margin-top: 150%;
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .graphiti {
-  position: absolute;
   z-index: 6000;
-  margin-top: 68%;
   background-color: white;
   padding: 1em;
 }
 
 .typography {
   background-color: #cc9933;
-  margin-top: 75%;
 
   // padding-top: 75px;
 
@@ -215,21 +257,35 @@ $grid-gutter-width: 0;
   }
 }
 
-.instaPics {
-  li {
-  display: inline-block;
-}
+.creditWhite {
+  background-color: #fff;
 }
 
-.smallPics {
-  width: 145px;
+.creditImg {
+  width: 150px;
 }
+
+.instaPics {
+  list-style: none;
+
+  li {
+  display: inline-block;
+  }
+  .smallPics {
+    width: 145px;
+  }
+}
+
+.natureYellow {
+  background-color: #cc9933;
+}
+
+
+
 
 .footer {
   p {
-    position: absolute;
     color: white;
-    margin-top: 75%;
     top: 50%;
     left: 50%;
     margin-right: -50%;
