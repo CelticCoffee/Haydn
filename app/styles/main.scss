@@ -1,3 +1,7 @@
+* {
+  font-family: 'Questrial', sans-serif;
+}
+
 $icon-font-path: '../fonts/';
 
 $grid-gutter-width: 0;
@@ -10,6 +14,76 @@ $grid-gutter-width: 0;
 .container-fluid {
     padding: 0px;
 }
+
+body {
+  background-color: black;
+}
+
+img {
+    width: 100%;
+}
+
+.hero_container {
+  position: relative;
+}
+
+
+/*the HAYDN*/
+.haydnLogo {
+  max-width: 30%;
+  position:absolute;
+  top: 41%;
+  left: 6%;
+
+}
+
+/*//the splash logo*/
+.splashTopLogo {
+  color: white;
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.25em;
+}
+
+/*.splashPianoteaser {
+  z-index: 6000;
+}*/
+.pianoTeaser {
+  z-index: 6000;
+  position: absolute;
+  max-width: 25%;
+  top: 55%;
+  left: 6%;
+}
+
+/***************************/
+/********Haydn Quote********/
+/***************************/
+.haydnRowQuote {
+  background-color: white;
+  padding: 2em;
+}
+
+.haydnQuote h4 {
+  margin-top: -.5em;
+  font-size: 1.55em;
+}
+
+.colorText {
+  color:  #cc9933;
+  padding-left: 1.5em;
+}
+
+.author {
+  p{
+    margin-left: -2em;
+    text-align: left;
+    font-size: 1.25em;
+  }
+}
+
 
 // this gives the placeholder rows some height.
 .placeholder-row {
@@ -29,6 +103,193 @@ $grid-gutter-width: 0;
   h1 {
     margin-top: .15em;
     color: white;
+    font-size: 5em;
+    font-weight: 200;
     // TODO use brand colors
+  }
+}
+
+.viewSpray {
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 40%;
+  margin-top: 25%;
+  text-transform: uppercase;
+}
+
+.sprayLightPic {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.overlaySprayLight {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.yellowTextBox {
+  background-color: #cc9933;
+  padding: 2em;
+}
+
+.videoArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 30%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+}
+
+.sandPaint {
+  color: white;
+  text-transform: uppercase;
+}
+
+.mapText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1em;
+  font-size: 2em;
+  z-index: 5000;
+  color: white;
+  text-transform: uppercase;
+}
+
+.pdxMap2 {
+  // position: absolute;
+  // margin-top: 5%;
+}
+
+.bluePrintYellow {
+  // position: absolute;
+  padding: 25px;
+  width: 100%;
+  // z-index: 5000;
+  background-color: #cc9933;
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.graphiti {
+  z-index: 6000;
+  background-color: white;
+  padding: 1em;
+}
+
+.typography {
+  background-color: #cc9933;
+
+  // padding-top: 75px;
+
+  h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3em;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 4em;
+    padding-top: 1em;
+  }
+}
+
+.typographyImg {
+  width: 100%;
+  height: auto;
+  margin: 0;
+
+}
+
+.oregonMap {
+  background-color: #333333;
+}
+
+.oregonOutline {
+  padding: 1.5em;
+}
+
+.benchImages {
+  width: 100%;
+  height: auto;
+}
+
+.onSet {
+  background-color: #333333;
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+  }
+}
+
+.bigPianoCol {
+  margin-top: 0;
+  img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.whiteBox {
+  background-color: #fff;
+  h3 {
+    color: #cc9933;
+    padding: 1em;
+  }
+  p {
+    padding: 2em;
+  }
+}
+
+.creditWhite {
+  background-color: #fff;
+}
+
+.creditImg {
+  width: 150px;
+}
+
+.instaPics {
+  list-style: none;
+
+  li {
+  display: inline-block;
+  }
+  .smallPics {
+    width: 145px;
+  }
+}
+
+.natureYellow {
+  background-color: #cc9933;
+}
+
+
+
+
+.footer {
+  p {
+    color: white;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 6000;
   }
 }
