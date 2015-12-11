@@ -1,7 +1,6 @@
-use strict;
+'use strict';
 
 console.log('\'Allo \'Allo!');
-
 
 // http://kenwheeler.github.io/slick/
 $(document).ready(function(){
