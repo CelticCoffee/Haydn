@@ -11,7 +11,7 @@ $grid-gutter-width: 0;
 $slick-prev-character: '<'; // are there taller chevrons in the font?
 $slick-next-character: '>';
 $slick-font-path: '../fonts/';
-$slick-loader-path: "/img/"; // TODO automate placement of slick ajax-loader.gif in app/img
+$slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.gif in app/img
 
 .old-piano-row {
   max-height: 3em;
@@ -130,7 +130,7 @@ img {
 .team-header {
   text-transform: uppercase;
   padding-left: 2em;
-  background-image: url(../img/photoBar/photoBarYellow.png);
+  background-image: url(../images/photoBar/photoBarYellow.png);
   background-repeat:repeat;
   height: 100%;
   h1 {
