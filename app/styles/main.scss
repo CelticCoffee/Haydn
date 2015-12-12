@@ -8,8 +8,8 @@ $grid-gutter-width: 0;
 
 
 // slick carousel customization
-$slick-prev-character: 'P';
-$slick-next-character: 'N';
+$slick-prev-character: '<'; // are there taller chevrons in the font?
+$slick-next-character: '>';
 $slick-font-path: '../fonts/';
 $slick-loader-path: "/img/"; // TODO automate placement of slick ajax-loader.gif in app/img
 
@@ -17,11 +17,31 @@ $slick-loader-path: "/img/"; // TODO automate placement of slick ajax-loader.gif
   max-height: 3em;
 }
 
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/slick-carousel/slick/slick.scss";
-@import "bower_components/slick-carousel/slick/slick-theme.scss"; // needed?
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
 // endbower
+
+/////// Slick carousel overrides
+// move arrows inside and on top of slick carousel
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 25px;
+    z-index: 1;
+}
+
+// Why isn't font size and weight of arrows a variable?
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
 
 // This is to make the rows full-bleed
 .container-fluid {
