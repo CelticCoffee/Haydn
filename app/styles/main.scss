@@ -13,20 +13,48 @@ $grid-gutter-width: 0;
 // This is to make the rows full-bleed
 .container-fluid {
     padding: 0px;
+    top: 0;
 }
 
 body {
   background-color: black;
+  position: relative;
+  z-index: 2;
 }
 
 img {
     width: 100%;
 }
+//from w3schools//
+.affix {
+      top: 0;
+      width: 100%;
+  }
 
-.hero_container {
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+
+
+.hline {
+  width:100%;
+  height:1px;
+  background: #fff
+}
+
+#hero_container {
   position: relative;
 }
 
+#pageContent{
+  position: relative;
+}
+
+#theNav {
+  background-color: black;
+  z-index: 2;
+}
 
 /*the HAYDN*/
 .haydnLogo {
@@ -61,7 +89,7 @@ img {
 /***************************/
 /********Haydn Quote********/
 /***************************/
-.haydnRowQuote {
+#haydnRowQuote {
   background-color: white;
   padding: 2em;
 }
@@ -84,17 +112,21 @@ img {
   }
 }
 
-
-// this gives the placeholder rows some height.
-.placeholder-row {
+.navbar .navbar-inverse {
     min-height: 2em;
     padding-top: .25em;
     color: white;
     border: 1px solid white;
+    top: 50%;
+    position: relative;
+    z-index: 50;
+
+
+
 }
 
 
-.team-header {
+#team-header {
   text-transform: uppercase;
   padding-left: 2em;
   background-image: url(../img/photoBar/photoBarYellow.png);
@@ -265,7 +297,7 @@ img {
   width: 150px;
 }
 
-.instaPics {
+#instaPics {
   list-style: none;
 
   li {

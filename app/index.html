@@ -24,7 +24,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="70">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -33,7 +33,7 @@
     <div class="container-fluid">
       <div class="row"> <!-- hero row -->
         <div class="col-lg-12">
-          <div class="hero_container">
+          <div id="hero_container">
             <div class="topImage">
               <img src="img/pianoJumbo.png" class="img-responsive" alt="piano jumbotron">
             </div>
@@ -46,19 +46,29 @@
           </div>
           <h5 class="splashTopLogo">splash</h5>
         </div>
+
       </div> <!-- .row -->
+      <div class="hline">
+      </div>
 
-
-
-
-
-       <div class="row"> <!-- nav row -->
-         <div class="col-sm-12 text-center placeholder-row">This is the nav row</div>
-       </div>
-
-      <div class="row"> <!-- team row -->
-
-        <div class="col-sm-4 team-header"><h1>Team</h1></div>
+    <div class="container-fluid" id="pageContent">
+      <nav class="navbar navbar-inverse" id="theNav" data-spy="affix" data-offset-top="200">
+        <ul class="nav navbar-nav">
+          <li class="bottomList"><a href="#team-header">Team</a></li>
+          <li class="topList"><a href="#haydnRowQuote">Start</a></li>
+          <li class="bottomList"><a href="#sandSpray">Sand and Spray</a></li>
+          <li class="topList"><a href="#mapAnchor">Map</a></li>
+          <li class="bottomList"><a href="#bluePrint">Blueprint</a></li>
+          <li class="topList"><a href="#trace">Trace</a></li>
+          <li class="bottomList"><a href="#typography">Typography</a></li>
+          <li class="topList"><a href="#">Bench and Light</a></li>
+          <li class="bottomList"><a href="#">On Set</a></li>
+          <li class="topList"><a href="#instaPics">Nature</a></li>
+          <li class="bottomList"><a href="#instaPics">Thanks</a></li>
+        </ul>
+      </nav>
+      <div class="row" id="team-header"> <!-- team row -->
+        <div class="col-sm-4"><h1>Team</h1></div>
         <div class="col-sm-1"><img src="img/photoBar/photoBar1.png" alt="Who is this?"></div>
         <div class="col-sm-1"><img src="img/photoBar/photoBar2.png" alt="Who is this?"></div>
         <div class="col-sm-1"><img src="img/photoBar/photoBar3.png" alt="Who is this?"></div>
@@ -68,7 +78,7 @@
         <div class="col-sm-1"><img src="img/photoBar/photoBar7.png" alt="Who is this?"></div>
         <div class="col-sm-1"><img src="img/photoBar/photoBar8.png" alt="Who is this?"></div>
       </div>
-      <div class="row haydnRowQuote">
+      <div class="row" id="haydnRowQuote">
         <div class="col-sm-4 spacer"></div>
         <div class="col-sm-5 col-md-4 haydnQuote">
           <div class="row part1">
@@ -86,7 +96,7 @@
 
 
 
-      <div class="row sandLight ">
+      <div class="row sandLight" id="sandSpray">
         <div class="col-lg-5">
           <img class="sprayLightPic" src="img/sprayLight/sprayImage.png" alt="paint pour"></img>
           <img class="overlaySprayLight" src="img/sprayLight/sprayImageBlack.png" alt="overlay"></img>
@@ -103,20 +113,20 @@
             Tommy provided his professional tools which he normally would use to paint high end automotive vehicles.  He was also our source for vinyl painting when it came time for the stool.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="mapAnchor">
         <div class="col-lg-12">
           <p class="mapText"> Portland, Oregon map</p>
           <img class="pdxMap2" src="img/portlandMap.png" alt="background map"></img>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="bluePrint">
         <div class="col-lg-4">
           <div class="row">
             <div class="col-lg-12 bluePrintYellow">
               <h3>Blueprint</h3>
             </div>
           </div>
-          <div class="row">
+          <div class="row" id="trace">
             <div class="col-lg-12">
             <!-- <img class="blueprint" src="img/blueprint/blueprintBlack.png" alt="blueprint box"></img> -->
             <img class="pianoSketch" src="img/blueprint/smartObj.png" alt="piano sketch"></img>
@@ -139,7 +149,7 @@
           <img class="graphiti" src="img/pleasePlayMe.png" alt= "please play me"></img>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="typography">
         <div class="col-lg-4 typography">
             <h3>Typography</h3>
             <p>With a simple rough sketch Kinjal attacked the piano with his charcoal pencil.  Please Play Me is an essential part of the piano because it invites the public to engage with the musical instrument.  The true puprose of hteis project lies behind these words.</p>
@@ -206,7 +216,7 @@
       </div>
           <div class="row">
             <div class="col-lg-6">
-              <ul class="instaPics">
+              <ul id="instaPics">
                 <li><img class="smallPics" src="img/smallPics/instaPic1.png" alt="insta 1"></img></li>
                 <li><img class="smallPics" src="img/smallPics/instaPic2.png" alt="insta 2"></img></li>
                 <li><img class="smallPics" src="img/smallPics/instaPic3.png" alt="insta 3"></img></li>
