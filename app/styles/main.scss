@@ -43,6 +43,14 @@ img {
   background: #fff
 }
 
+.hlineGray {
+  width: 85%;
+  height: 1px;
+  display: block;
+  margin: 2px auto;
+  background: #696969;
+}
+
 #hero_container {
   position: relative;
 }
@@ -289,12 +297,40 @@ img {
   }
 }
 
+.verticalLine {
+  border-left: 1px solid #696969;
+  height: 100%;
+}
+
+.credits {
+  list-style: none;
+
+}
+
+.credits li {
+  display: inline;
+  padding: 1em;
+}
+
 .creditWhite {
   background-color: #fff;
 }
 
 .creditImg {
-  width: 150px;
+  width: 170px;
+  padding-bottom: 3em;
+}
+
+#leoLogo {
+  width: 40px;
+}
+
+.leoLogo {
+  margin-right: 2em;
+}
+
+#leoName {
+  width: 40px;
 }
 
 #instaPics {
@@ -310,6 +346,7 @@ img {
 
 .natureYellow {
   background-color: #cc9933;
+  padding: 2.5em 2em;
 }
 
 
