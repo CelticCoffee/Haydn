@@ -24,7 +24,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="70">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -33,69 +33,52 @@
     <div class="container-fluid">
       <div class="row"> <!-- hero row -->
         <div class="col-lg-12">
-          <div class="hero_container">
+          <div id="hero_container">
             <div class="topImage">
-              <img src="images/pianoJumbo.png" class="img-responsive" alt="piano jumbotron">
+              <img src="img/pianoJumbo.png" class="img-responsive" alt="piano jumbotron">
             </div>
             <div class="haydnLogo">
-              <img src="images/haydnLogo.png" class="img-responsive haydnTitle" alt="haydn logo">
+              <img src="img/haydnLogo.png" class="img-responsive haydnTitle" alt="haydn logo">
             </div>
             <div class="splashPianoTeaser">
-              <img src= "images/splashPianoteaser.png" class="img-responsive pianoTeaser" alt="Splash BiLine">
+              <img src= "img/splashPianoteaser.png" class="img-responsive pianoTeaser" alt="Splash BiLine">
             </div>
           </div>
           <h5 class="splashTopLogo">splash</h5>
         </div>
+
       </div> <!-- .row -->
-
-      <!-- <div class="row">
-        <div class="col-sm-12 text-center placeholder-row">This is the nav row</div>
-      </div> -->
-<!-- does the navbar need to be in a row? Makes sense but that's not what's given in the examples. Let's play and find out. -->
-      <nav class="navbar navbar-default navbar-inverse" data-spy="affix" data-offset-top="0">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#team-row">team<span class="sr-only">(current)</span></a></li>
-              <li><a href="#start-row">start</a></li>
-              <li><a href="#sand-spray-row">sand &amp; spray</a></li>
-              <li><a href="#map-row">map</a></li>
-              <li><a href="#blueprint-row">blueprint</a></li>
-              <li><a href="#trace-row">trace</a></li>
-              <li><a href="#typography-row">typography</a></li>
-              <li><a href="#bench-light-row">bench and light</a></li>
-              <li><a href="#on-set-row">on-set</a></li>
-              <li><a href="#nature-row">nature</a></li>
-              <li><a href="#thanks-row">thanks</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-
-      <div class="row" id="team-row"> <!-- team row -->
-
-        <div class="col-sm-4 team-header"><h1>Team</h1></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar1.png" alt="Who is this?"></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar2.png" alt="Who is this?"></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar3.png" alt="Who is this?"></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar4.png" alt="Who is this?"></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar5.png" alt="Who is this?"></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar6.png" alt="Who is this?"></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar7.png" alt="Who is this?"></div>
-        <div class="col-sm-1"><img src="images/photoBar/photoBar8.png" alt="Who is this?"></div>
+      <div class="hline">
       </div>
-      <div class="row haydnRowQuote">
+
+    <div class="container-fluid" id="pageContent">
+      <nav class="navbar navbar-inverse" id="theNav" data-spy="affix" data-offset-top="200">
+        <ul class="nav navbar-nav">
+          <li class="bottomList"><a href="#team-header">Team</a></li>
+          <li class="topList"><a href="#haydnRowQuote">Start</a></li>
+          <li class="bottomList"><a href="#sandSpray">Sand and Spray</a></li>
+          <li class="topList"><a href="#mapAnchor">Map</a></li>
+          <li class="bottomList"><a href="#bluePrint">Blueprint</a></li>
+          <li class="topList"><a href="#trace">Trace</a></li>
+          <li class="bottomList"><a href="#typography">Typography</a></li>
+          <li class="topList"><a href="#">Bench and Light</a></li>
+          <li class="bottomList"><a href="#">On Set</a></li>
+          <li class="topList"><a href="#instaPics">Nature</a></li>
+          <li class="bottomList"><a href="#instaPics">Thanks</a></li>
+        </ul>
+      </nav>
+      <div class="row" id="team-header"> <!-- team row -->
+        <div class="col-sm-4"><h1>Team</h1></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar1.png" alt="Who is this?"></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar2.png" alt="Who is this?"></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar3.png" alt="Who is this?"></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar4.png" alt="Who is this?"></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar5.png" alt="Who is this?"></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar6.png" alt="Who is this?"></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar7.png" alt="Who is this?"></div>
+        <div class="col-sm-1"><img src="img/photoBar/photoBar8.png" alt="Who is this?"></div>
+      </div>
+      <div class="row" id="haydnRowQuote">
         <div class="col-sm-4 spacer"></div>
         <div class="col-sm-5 col-md-4 haydnQuote">
           <div class="row part1">
@@ -112,33 +95,17 @@
       </div>
 
 
-      <div class="row old-piano-row" id="start-row">
-        <!-- experimental slider that should match design better -->
-        <div class="col-sm-12">
-          <div class="old-piano-slider">
-            <div><img class=pianoPic src="images/oldPianoCarousel/oldPianoCarousel1.png" alt="..."></div>
-            <div><img class=pianoPic src="images/oldPianoCarousel/oldPianoCarousel2.png" alt="..."></div>
-            <div><img class=pianoPic src="images/oldPianoCarousel/oldPianoCarousel3.png" alt="..."></div>
-            <div><img class=pianoPic src="images/oldPianoCarousel/oldPianoCarousel2.png" alt="..."></div>
-            <div><img class=pianoPic src="images/oldPianoCarousel/oldPianoCarousel3.png" alt="..."></div>
-            <div><img class=pianoPic src="images/oldPianoCarousel/oldPianoCarousel3.png" alt="..."></div>
-          </div>
-        </div>
-      </div>
 
-
-
-
-      <div class="row sandLight" id="sand-spray-row">
+      <div class="row sandLight" id="sandSpray">
         <div class="col-lg-5">
-          <img class="sprayLightPic" src="images/sprayLight/sprayImage.png" alt="paint pour"></img>
-          <img class="overlaySprayLight" src="images/sprayLight/sprayImageBlack.png" alt="overlay"></img>
+          <img class="sprayLightPic" src="img/sprayLight/sprayImage.png" alt="paint pour"></img>
+          <img class="overlaySprayLight" src="img/sprayLight/sprayImageBlack.png" alt="overlay"></img>
           <p class="viewSpray"> view the spray</p>
         </div>
         <div class="col-lg-4">
-          <img class="sprayLightPic" src="images/sprayLight/sandTLVid.png" alt="sand video"></img>
-          <img class="overlaySprayLight" src="images/sprayLight/videoTint.png" alt="overlay"></img>
-          <img class="videoArrow" src="images/sprayLight/videoArrow.png" alt="video arrow"></img>
+          <img class="sprayLightPic" src="img/sprayLight/sandTLVid.png" alt="sand video"></img>
+          <img class="overlaySprayLight" src="img/sprayLight/videoTint.png" alt="overlay"></img>
+          <img class="videoArrow" src="img/sprayLight/videoArrow.png" alt="video arrow"></img>
         </div>
         <div class="col-lg-3 yellowTextBox">
           <h3 class="sandPaint"> sand &#38; paint</h3>
@@ -146,115 +113,121 @@
             Tommy provided his professional tools which he normally would use to paint high end automotive vehicles.  He was also our source for vinyl painting when it came time for the stool.</p>
         </div>
       </div>
-      <div class="row" id="map-row">
+      <div class="row" id="mapAnchor">
         <div class="col-lg-12">
           <p class="mapText"> Portland, Oregon map</p>
-          <img class="pdxMap2" src="images/portlandMap.png" alt="background map"></img>
+          <img class="pdxMap2" src="img/portlandMap.png" alt="background map"></img>
         </div>
       </div>
-      <div class="row" id="blueprint-row">
+      <div class="row" id="bluePrint">
         <div class="col-lg-4">
           <div class="row">
             <div class="col-lg-12 bluePrintYellow">
               <h3>Blueprint</h3>
             </div>
           </div>
-          <div class="row" id="trace-row">
+          <div class="row" id="trace">
             <div class="col-lg-12">
-            <!-- <img class="blueprint" src="images/blueprint/blueprintBlack.png" alt="blueprint box"></img> -->
-            <img class="pianoSketch" src="images/blueprint/smartObj.png" alt="piano sketch"></img>
+            <!-- <img class="blueprint" src="img/blueprint/blueprintBlack.png" alt="blueprint box"></img> -->
+            <img class="pianoSketch" src="img/blueprint/smartObj.png" alt="piano sketch"></img>
           </div>
           </div>
 
           <div class="row">
             <div class="col-lg-12">
-            <img class="drawLines" src="images/blueprint/drawLines.png" alt="draw lines"></img>
+            <img class="drawLines" src="img/blueprint/drawLines.png" alt="draw lines"></img>
           </div>
           </div>
 
         </div>
         <div class="col-lg-8">
-          <img class="paintingMapPiano" src="images/blueprint/pianoMapPaint.png" alt="map onto piano"></img>
+          <img class="paintingMapPiano" src="img/blueprint/pianoMapPaint.png" alt="map onto piano"></img>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <img class="graphiti" src="images/pleasePlayMe.png" alt= "please play me"></img>
+          <img class="graphiti" src="img/pleasePlayMe.png" alt= "please play me"></img>
         </div>
       </div>
-      <div class="row" id="typography-row">
+      <div class="row" id="typography">
         <div class="col-lg-4 typography">
             <h3>Typography</h3>
             <p>With a simple rough sketch Kinjal attacked the piano with his charcoal pencil.  Please Play Me is an essential part of the piano because it invites the public to engage with the musical instrument.  The true puprose of hteis project lies behind these words.</p>
         </div>
         <div class="col-lg-4 typography">
-          <img class="typographyImg" src="images/typography/typoWrite.png" alt="typography creation"></img>
+          <img class="typographyImg" src="img/typography/typoWrite.png" alt="typography creation"></img>
         </div>
         <div class="col-lg-4 typography">
-          <img class="typographyImg" src="images/typography/typoFace.png" alt="typography creation"></img>
+          <img class="typographyImg" src="img/typography/typoFace.png" alt="typography creation"></img>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-8 oregonMap">
-          <img class="oregonOutline" src="images/benchRow/oregonOutline.png" alt="Oregon Outline"></img>
+          <img class="oregonOutline" src="img/benchRow/oregonOutline.png" alt="Oregon Outline"></img>
         </div>
         <div class="col-lg-4">
-          <img class="benchImages" src="images/benchRow/bench1.png" alt="bench 1"></img>
-          <img class="benchImages" src="images/benchRow/bench2.png" alt="bench 2"></img>
+          <img class="benchImages" src="img/benchRow/bench1.png" alt="bench 1"></img>
+          <img class="benchImages" src="img/benchRow/bench2.png" alt="bench 2"></img>
         </div>
       </div>
+      <div class="row">
+      <div class="col-lg-4">
+        <img class="lampImg" src="img/lamp/lamp1.png" alt="lamp 1"></img>
 
-      <div class="row" id="bench-light-row">
-      <div class="col-lg-4">
-        <img class="lampImg" src="images/lamp/lamp1.png" alt="lamp 1"></img>
-
       </div>
       <div class="col-lg-4">
-        <img class="lampImg" src="images/lamp/lamp2.png" alt="lamp 2"></img>
+        <img class="lampImg" src="img/lamp/lamp2.png" alt="lamp 2"></img>
       </div>
       <div class="col-lg-4">
-        <img class="lampImg" src="images/lamp/lamp3.png" alt="lamp 3"></img>
+        <img class="lampImg" src="img/lamp/lamp3.png" alt="lamp 3"></img>
       </div>
       </div>
-      <div class="row" id="on-set-row">
+      <div class="row">
         <div class="col-lg-12 onSet">
           <h3>on set</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12 bigPianoCol">
-          <img src="images/bigPiano.png" alt="big piano"></img>
+          <img src="img/bigPiano.png" alt="big piano"></img>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <img src="images/performanceMoment.png" alt="performance moment"></img>
+          <img src="img/performanceMoment.png" alt="performance moment"></img>
         </div>
         <div class="col-lg-6">
           <div class="row whiteBox">
             <div class="col-lg-12">
             <h3> LEO - Stopping to Start </h3>
             <p>We had the pleasure of having LEO come inot our studio adn play a couple of songs for us on our finished piano.  Stopping to Start is an original piece that was perfect to show off the beautiful sound from this restored instrument.  This video is the recording of the first song being played on this renovated piano that will soon be played all day and night out in the public.  Lanksy Sound was gracious enough to volunteer their time to record the musical piece.</p>
+            <div class="hlineGray">
+            </div>
             </p>
+
           </div>
           </div>
           <div class="row">
+
             <div class="col-lg-12 creditWhite">
             <ul class="credits">
-              <li><img class="creditImg" src="images/credits/creditList.png" alt="credits"></img></li>
-              <li><img class="creditImg" src="images/credits/leoLogo.png" alt="leoLogo"></img></li>
-              <li><img class="creditImg" src="images/credits/lanskyLogo.png" alt="lanskyLogo"></img></li>
+              <li><img class="creditImg" src="img/credits/creditList.png" alt="credits"></img></li>
+              <li class="verticalLine"></li>
+              <li class="leoLogo"><img class="creditImg" id="leoLogo" src="img/credits/leoLogo.png" alt="leoLogo"><img class="creditImg" id="leoName" src="img/credits/leoName.png" alt="leoName"></li>
+
+              <li class="verticalLine"></li>
+              <li><img class="creditImg" src="img/credits/lanskyLogo.png" alt="lanskyLogo"></img></li>
             </ul>
           </div>
         </div>
       </div>
-          <div class="row" id="nature-row">
+          <div class="row">
             <div class="col-lg-6">
-              <ul class="instaPics">
-                <li><img class="smallPics" src="images/smallPics/instaPic1.png" alt="insta 1"></img></li>
-                <li><img class="smallPics" src="images/smallPics/instaPic2.png" alt="insta 2"></img></li>
-                <li><img class="smallPics" src="images/smallPics/instaPic3.png" alt="insta 3"></img></li>
-                <li><img class="smallPics" src="images/smallPics/instaPic4.png" alt="insta 4"></img></li>
+              <ul id="instaPics">
+                <li><img class="smallPics" src="img/smallPics/instaPic1.png" alt="insta 1"></img></li>
+                <li><img class="smallPics" src="img/smallPics/instaPic2.png" alt="insta 2"></img></li>
+                <li><img class="smallPics" src="img/smallPics/instaPic3.png" alt="insta 3"></img></li>
+                <li><img class="smallPics" src="img/smallPics/instaPic4.png" alt="insta 4"></img></li>
               </ul>
             </div>
             <div class="col-lg-5 natureYellow">
@@ -264,7 +237,7 @@
           </div>
         </div>
       </div>
-      <div class="row" id="thanks-row">
+      <div class="row">
         <div class="col-lg-5">
           <h2 class="thankYou">Thank you</h2>
         </div>
@@ -318,7 +291,6 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
