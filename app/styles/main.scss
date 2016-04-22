@@ -48,6 +48,57 @@ $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.
     padding: 0px;
 }
 
+
+body {
+  background-color: black;
+  position: relative;
+  z-index: 2;
+}
+
+img {
+    width: 100%;
+}
+//from w3schools//
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+
+
+.hline {
+  width:100%;
+  height:1px;
+  background: #fff
+}
+
+.hlineGray {
+  width: 85%;
+  height: 1px;
+  display: block;
+  margin: 2px auto;
+  background: #696969;
+}
+
+#hero_container {
+  position: relative;
+}
+
+#pageContent{
+  position: relative;
+}
+
+#theNav {
+  background-color: black;
+  z-index: 2;
+}
+
+
+
 body {
   background-color: black;
 }
@@ -90,6 +141,20 @@ img {
   top: 55%;
   left: 6%;
 }
+
+.navbar .navbar-inverse {
+    min-height: 2em;
+    padding-top: .25em;
+    color: white;
+    border: 1px solid white;
+    top: 50%;
+    position: relative;
+    z-index: 50;
+
+
+
+}
+
 
 /***************************/
 /********Haydn Quote********/
