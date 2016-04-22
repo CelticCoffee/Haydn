@@ -118,33 +118,13 @@ img {
 }
 
 
-// navbar stuff
-
-// Center the links
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  z-index: 9999;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-.affix {
-  top: 0;
-  left:0;
-}
-
-
 // this gives the placeholder rows some height.
-.placeholder-row {
-    min-height: 2em;
-    padding-top: .25em;
-    color: white;
-    border: 1px solid white;
-}
+// .placeholder-row {
+//     min-height: 2em;
+//     padding-top: .25em;
+//     color: white;
+//     border: 1px solid white;
+// }
 
 
 .team-header {
