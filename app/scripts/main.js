@@ -10,4 +10,15 @@ $(document).ready(function(){
     slidesToScroll: 1,
     variableWidth: true
   });
-});
+
+  $('.navbar').affix({
+    offset: {
+      top: function () {
+        return (this.top = $('.hero_container').outerHeight(true))
+      }
+    }
+  })
+
+
+
+}); // $(document).ready
