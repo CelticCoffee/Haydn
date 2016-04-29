@@ -17,9 +17,7 @@ $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.
   max-height: 3em;
 }
 
-#sandSpray {
-  max-height: 2em;
-}
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -251,6 +249,14 @@ img {
 .sandPaint {
   color: white;
   text-transform: uppercase;
+}
+
+.sprayFade img {
+  width: 100%;
+}
+
+.slick-slider {
+  margin-bottom: -10px;
 }
 
 
