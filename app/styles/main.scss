@@ -17,6 +17,9 @@ $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.
   max-height: 3em;
 }
 
+#sandSpray {
+  max-height: 2em;
+}
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -36,10 +39,16 @@ $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.
     z-index: 1;
 }
 
+
 // Why isn't font size and weight of arrows a variable?
 .slick-prev:before, .slick-next:before {
     font-size: 40px;
     font-weight: bolder;
+}
+
+.fade {
+  // opacity: .80;
+  z-index: 1;
 }
 
 
@@ -53,7 +62,7 @@ $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.
 body {
   background-color: black;
   position: relative;
-  z-index: 2;
+  z-index: 20;
 }
 
 img {
@@ -198,6 +207,7 @@ img {
     color: white;
     font-size: 5em;
     font-weight: 200;
+    margin-left: .85em;
     // TODO use brand colors
   }
 }

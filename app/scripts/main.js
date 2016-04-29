@@ -10,4 +10,15 @@ $(document).ready(function(){
     slidesToScroll: 1,
     variableWidth: true
   });
+
+
+$('.sprayFade').slick({
+  dots: true,
+  infinite: true,
+  speed: 200,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
+  pauseOnHover: true
+});
 });
