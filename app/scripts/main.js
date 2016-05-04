@@ -11,6 +11,10 @@ $(document).ready(function(){
     variableWidth: true
   });
 
+  $('.bigMap-slideshow').slick({
+    autoplay: true
+  });
+
 
 $('.sprayFade').slick({
   dots: true,

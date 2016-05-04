@@ -89,6 +89,7 @@ img {
   height: 1px;
   display: block;
   margin: 2px auto;
+  padding: 0;
   background: #696969;
 }
 
@@ -152,11 +153,11 @@ img {
     top: 50%;
     position: relative;
     z-index: 50;
-
-
-
 }
 
+#theNav li a {
+  font-size: 1.25em;
+}
 
 /***************************/
 /********Haydn Quote********/
@@ -201,13 +202,21 @@ img {
   background-repeat:repeat;
   height: 100%;
   h1 {
-    margin-top: .15em;
+    
     color: white;
-    font-size: 5em;
+    font-size: 8em;
     font-weight: 200;
     margin-left: .85em;
     // TODO use brand colors
   }
+}
+
+#sandSpray {
+  background-color: #cc9933;
+}
+
+#typography {
+  background-color: #cc9933;
 }
 
 .viewSpray {
@@ -249,6 +258,13 @@ img {
 .sandPaint {
   color: white;
   text-transform: uppercase;
+
+}
+
+.sandPaintText {
+  padding-top: 1em;
+  font-size: 1.15em;
+  line-height: 1.75em;
 }
 
 .sprayFade img {
@@ -386,12 +402,16 @@ img {
 
 
 .creditImg {
-  width: 170px;
   padding-bottom: 3em;
 }
 
+#creditImg1 {
+  margin-right: 4em;
+}
+
 #leoLogo {
-  width: 40px;
+  width: 10em;
+
 }
 
 .leoLogo {
