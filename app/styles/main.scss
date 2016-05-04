@@ -196,13 +196,14 @@ img {
 
 
 #team-header {
+
   text-transform: uppercase;
   padding-left: 2em;
   background-image: url(../images/photoBar/photoBarYellow.png);
   background-repeat:repeat;
   height: 100%;
   h1 {
-    
+
     color: white;
     font-size: 8em;
     font-weight: 200;
@@ -210,6 +211,17 @@ img {
     // TODO use brand colors
   }
 }
+
+.teamRoll {
+  display: inline-block;
+}
+
+.teamRoll img {
+  width: 150px;
+
+}
+
+
 
 #sandSpray {
   background-color: #cc9933;
@@ -470,3 +482,11 @@ img {
     z-index: 6000;
   }
 }
+
+//media query //
+ @media screen and (max-width: 1660px) {
+   #team-header {
+     display: none;
+   }
+
+ }

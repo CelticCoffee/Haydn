@@ -16,6 +16,8 @@ $(document).ready(function(){
   });
 
 
+
+
 $('.sprayFade').slick({
   dots: true,
   infinite: true,
