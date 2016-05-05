@@ -460,7 +460,7 @@ img {
 
 .natureYellow {
   background-color: #cc9933;
-  padding: 2.1em 3em 3em;
+  padding: 2.1em 3em 11em;
   margin-top: 0;
   width: 50%;
   h3 {
@@ -469,33 +469,44 @@ img {
 }
 
 #thankYou {
-  text-transform: uppercase;
-  height: 100%;
   background-color: #303030;
+
   .thankYou {
+    text-transform: uppercase;
     color: white;
     font-size: 8em;
     font-weight: 200;
     text-align: center;
+    padding-top: .25em;
     // TODO use brand colors
   }
-
-  .naturePics {
-    width:25%;
-  }
 }
+  .naturePics {
+    display: inline-block;
+    max-width: 311px;
+  }
 
+  .smallTallPic {
+    overflow: hidden;
+
+  }
 
 
 
 .footer {
   p {
+    background-color: black;
     color: white;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 6000;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    // font-height: 44em;
+    // color: orange;
+    // top: 50%;
+    // left: 50%;
+    // margin-right: -50%;
+    // transform: translate(-50%, -50%);
+    // z-index: 1;
   }
 }
 
