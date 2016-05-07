@@ -88,7 +88,7 @@ img {
   width: 85%;
   height: 1px;
   display: block;
-  margin: 2px auto;
+  margin: 2em;
   padding: 0;
   background: #696969;
 }
@@ -134,9 +134,6 @@ img {
   font-size: 1.25em;
 }
 
-/*.splashPianoteaser {
-  z-index: 6000;
-}*/
 .pianoTeaser {
   z-index: 6000;
   position: absolute;
@@ -224,12 +221,11 @@ img {
 
 
 #sandSpray {
-  background-color: #cc9933;
+  background-image: url(../images/photoBar/photoBarYellow.png);
+  background-repeat:repeat;
 }
 
-#typography {
-  background-color: #cc9933;
-}
+
 
 .viewSpray {
   position: absolute;
@@ -252,30 +248,35 @@ img {
   position: absolute;
 }
 
-.yellowTextBox {
-  background-color: #cc9933;
-  padding: 2em;
-}
 
-.videoArrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 30%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  width: 15%;
-}
+
+// .videoArrow {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   margin-top: 30%;
+//   margin-right: -50%;
+//   transform: translate(-50%, -50%);
+//   width: 15%;
+// }
 
 .sandPaint {
+  padding-top: 1em;
+  padding-left: 1em;
   color: white;
   text-transform: uppercase;
 
 }
 
+.yellowTextBox {
+  padding: 1em;
+}
+
 .sandPaintText {
   padding-top: 1em;
-  font-size: 1.15em;
+  padding-left: .5em;
+  pading-right: 1em;
+  font-size: 1em;
   line-height: 1.75em;
 }
 
@@ -287,6 +288,14 @@ img {
   margin-bottom: -10px;
 }
 
+.videoSpray {
+  width: 100%;
+}
+
+#trace {
+  background-image: url(../images/blueprint/blueprintBlack.png);
+  background-repeat:repeat;
+}
 
 
 .mapText {
@@ -305,14 +314,14 @@ img {
 .pdxMap2 {
   // position: absolute;
   // margin-top: 5%;
+}
 
+#bigMapModal {
+  z-index: 10;
 }
 
 .bluePrintYellow {
-  // position: absolute;
-  padding: 25px;
   width: 100%;
-  // z-index: 5000;
   background-color: #cc9933;
   h3 {
     color: white;
@@ -322,36 +331,36 @@ img {
 }
 
 .graphiti {
-  z-index: 6000;
   background-color: white;
   padding: 1em;
 }
 
-.typography {
-  background-color: #cc9933;
 
-  // padding-top: 75px;
+#typography {
+  background-image: url(../images/photoBar/photoBarYellow.png);
+  background-repeat:repeat;
 
   h3 {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 3em;
   }
 
   p {
+    line-height: 1.5em;
     font-size: 1em;
-    padding: 4em;
     padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
 }
 
-.typographyImg {
+.typography-items {
   width: 100%;
-  height: auto;
-  margin: 0;
-
 }
+
+
 
 .oregonMap {
   background-color: #333333;
@@ -363,7 +372,10 @@ img {
 
 .benchImages {
   width: 100%;
-  height: auto;
+}
+
+.lampImg {
+  width: 100%;
 }
 
 .onSet {
@@ -398,40 +410,39 @@ img {
   }
 
 }
-
 .verticalLine {
+  margin: 2em 2em;
   border-left: 1px solid #696969;
   height: 100%;
 }
 
-.credits {
-  list-style: none;
-
+//credits for video//
+table {
+  td {
+    padding-top: .75em;
+    padding-left: 2em;
+    padding-bottom: .75em;
+  }
+}
+.leoPerforms {
+  max-width: 100%;
 }
 
-.credits li {
-  display: inline;
-  padding: 1em;
-}
-
-
-.creditImg {
-  padding-bottom: 3em;
-}
-
-#creditImg1 {
-  margin-right: 4em;
-  width: 15em;
-}
-
-.leoLogo img {
-  margin-right: 1em;
+#leoLogo {
   padding-top: 2em;
 }
 
 #leoName {
   width: 3em;
-  margin-left: 0;
+  margin-left: 1em;
+}
+
+#lanskyLogo {
+  width: 85%;
+  padding-top: 6em;
+
+
+
 }
 
 .creditWhite {
@@ -439,30 +450,26 @@ img {
   margin: 0;
 }
 
+//leo logo and stuff//
 .creditImg {
   width: 120px;
 }
 
-#instaPics {
-  .smallPics {
-    width: 24.5%;
-  }
+.smallPics {
+  width: 100%;
 }
 
-
-
-.singleSmallPic {
-  width: 75%;
-  padding-left: .5em;
+#nature {
+  background-image: url(../images/photoBar/photoBarYellow.png);
+  background-repeat:repeat;
 }
-
-
 
 .natureYellow {
-  background-color: #cc9933;
-  padding: 2.1em 3em 11em;
-  margin-top: 0;
-  width: 50%;
+
+  //
+  // background-color: #cc9933;
+  padding: .5em 1em 1em 1em;
+  height: auto;
   h3 {
     color: white;
   }
@@ -477,19 +484,17 @@ img {
     font-size: 8em;
     font-weight: 200;
     text-align: center;
-    padding-top: .25em;
+    padding-top: .75em;
+    // max-width: 679px;
     // TODO use brand colors
   }
 }
   .naturePics {
     display: inline-block;
-    max-width: 311px;
+    width: 100%;
   }
 
-  .smallTallPic {
-    overflow: hidden;
 
-  }
 
 
 
@@ -500,13 +505,7 @@ img {
     text-align: center;
     padding-bottom: 2em;
     padding-top: 2em;
-    // font-height: 44em;
-    // color: orange;
-    // top: 50%;
-    // left: 50%;
-    // margin-right: -50%;
-    // transform: translate(-50%, -50%);
-    // z-index: 1;
+
   }
 }
 
@@ -515,5 +514,43 @@ img {
    #team-header {
      display: none;
    }
-
  }
+
+ @media screen and (max-width: 1422px) {
+
+   #thankYou {
+     .thankYou {
+       font-size: 6em;
+       padding-top: .3em;
+
+      }
+    }
+  }
+
+@media screen and (max-width: 376px) {
+  #leoLogo {
+    padding-left: 2em;
+  }
+  #leoName {
+    padding-left: 2em;
+    width: 5em;
+  }
+  #lanskyLogo {
+      padding-left: 2em;
+
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #typography {
+
+    p {
+      line-height: 1.5em;
+      font-size: 1.15em;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+
+  }
+}
