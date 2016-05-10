@@ -169,18 +169,20 @@ img {
   font-size: 1.55em;
 }
 
+// .haydn1Quote {
+//   font-size: 1.75em;
+// }
+
 .colorText {
   color:  #cc9933;
   padding-left: 1.5em;
+  font-size: 1.75em;
 }
 
 .author {
-  p{
-    margin-left: -2em;
-    text-align: left;
     font-size: 1.25em;
   }
-}
+
 
 
 // this gives the placeholder rows some height.
@@ -218,6 +220,11 @@ img {
 
 }
 
+.haydnTable td {
+ padding-top: 0;
+ padding-bottom: 0;
+ text-align: center;
+}
 
 
 #sandSpray {
@@ -248,18 +255,6 @@ img {
   position: absolute;
 }
 
-
-
-// .videoArrow {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   margin-top: 30%;
-//   margin-right: -50%;
-//   transform: translate(-50%, -50%);
-//   width: 15%;
-// }
-
 .sandPaint {
   padding-top: 1em;
   padding-left: 1em;
@@ -269,27 +264,35 @@ img {
 }
 
 .yellowTextBox {
-  padding: 1em;
+
 }
 
 .sandPaintText {
   padding-top: 1em;
-  padding-left: .5em;
-  pading-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1em;
-  line-height: 1.75em;
+  // line-height: 1.75em;
 }
 
 .sprayFade img {
   width: 100%;
 }
 
+
+
 .slick-slider {
   margin-bottom: -10px;
 }
 
-.videoSpray {
-  width: 100%;
+.sprayFade {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.sprayFadeVid {
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 #trace {
@@ -311,9 +314,15 @@ img {
   text-transform: uppercase;
 }
 
+#mapAnchor {
+  background-color: black;
+  margin: .5em;
+
+}
+
 .pdxMap2 {
-  // position: absolute;
-  // margin-top: 5%;
+  position: relative;
+  margin-top: 0;
 }
 
 #bigMapModal {
@@ -539,6 +548,20 @@ table {
       padding-left: 2em;
 
   }
+
+  .haydn1Quote {
+    font-size: .9em;
+  }
+
+  .colorText {
+    font-size: .9em;
+  }
+  .author {
+      font-size: .9em;
+    }
+  }
+
+
 }
 
 @media screen and (min-width: 1300px) {
