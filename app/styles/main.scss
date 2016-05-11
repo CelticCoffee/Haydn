@@ -6,12 +6,16 @@
 $icon-font-path: '../fonts/';
 $grid-gutter-width: 0;
 
+// $link-color:            $brand-primary !default;
+$link-color: white;
+
 
 // slick carousel customization
 $slick-prev-character: '<'; // are there taller chevrons in the font?
 $slick-next-character: '>';
 $slick-font-path: '../fonts/';
 $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.gif in app/img
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -94,13 +98,6 @@ img {
   position: relative;
 }
 
-#theNav {
-  background-color: black;
-  z-index: 2;
-}
-
-
-
 
 
 .hero_container {
@@ -150,10 +147,14 @@ img {
     top: 50%;
     position: relative;
     z-index: 50;
+
 }
 
 #theNav {
   font-size: 1.25em;
+  // background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 /***************************/
