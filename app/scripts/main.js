@@ -24,14 +24,12 @@ $(document).ready(function(){
     });
 
   $('.sprayFade').slick({
-    // dots: false,
-    // infinite: true,
-    // speed: 200,
-    // fade: true,
-    // cssEase: 'linear',
-    // autoplay: true,
-    // pauseOnHover: true
-  });
+    });
 
+  $('.photB').slick({
+    infinite: true,
+    slidesToShow: 8,
+    slidesToScroll: 4
+  });
 
 });
