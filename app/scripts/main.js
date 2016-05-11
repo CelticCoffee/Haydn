@@ -17,7 +17,7 @@ $(document).ready(function(){
   });
 
   $('.studioPics').slick({
-    })
+  });
 
   $('.bigMap-slideshow').slick({
       autoplay: true
