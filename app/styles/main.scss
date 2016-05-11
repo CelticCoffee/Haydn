@@ -13,11 +13,6 @@ $slick-next-character: '>';
 $slick-font-path: '../fonts/';
 $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.gif in app/img
 
-.old-piano-row {
-  max-height: 3em;
-}
-
-
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/slick-carousel/slick/slick.scss";
@@ -36,26 +31,77 @@ $slick-loader-path: "/images/"; // TODO automate placement of slick ajax-loader.
     z-index: 1;
 }
 
+
 // Why isn't font size and weight of arrows a variable?
 .slick-prev:before, .slick-next:before {
     font-size: 40px;
     font-weight: bolder;
 }
 
+.fade {
+  // opacity: .80;
+  z-index: 1;
+}
+
 
 // This is to make the rows full-bleed
 .container-fluid {
     padding: 0px;
+    top: 0;
 }
+
 
 body {
   background-color: black;
-
+  position: relative;
 }
 
 img {
     width: 100%;
 }
+//from w3schools//
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+
+
+.hline {
+  width:100%;
+  height:1px;
+  background: #fff
+}
+
+.hlineGray {
+  width: 85%;
+  height: 1px;
+  display: block;
+  margin: 2em;
+  padding: 0;
+  background: #696969;
+}
+
+.hero_container {
+  position: relative;
+}
+//
+#pageContent{
+  position: relative;
+}
+
+#theNav {
+  background-color: black;
+  z-index: 2;
+}
+
+
+
+
 
 .hero_container {
   position: relative;
@@ -81,9 +127,6 @@ img {
   font-size: 1.25em;
 }
 
-/*.splashPianoteaser {
-  z-index: 6000;
-}*/
 .pianoTeaser {
   z-index: 6000;
   position: absolute;
@@ -93,75 +136,89 @@ img {
 }
 
 /***************************/
+/********Nav********/
+/***************************/
+#mobyWhaleMenu {
+  width: 25%;
+}
+
+.navbar .navbar-inverse {
+    min-height: 2em;
+    padding-top: .25em;
+    color: white;
+    border: 1px solid white;
+    top: 50%;
+    position: relative;
+    z-index: 50;
+}
+
+#theNav {
+  font-size: 1.25em;
+}
+
+/***************************/
 /********Haydn Quote********/
 /***************************/
-.haydnRowQuote {
+#haydnRowQuote {
   background-color: white;
   padding: 2em;
 }
 
-.haydnQuote h4 {
-  margin-top: -.5em;
-  font-size: 1.55em;
+.haydn1Quote {
+  font-size: 1.75em;
 }
 
 .colorText {
   color:  #cc9933;
   padding-left: 1.5em;
+  font-size: 1.75em;
 }
 
 .author {
-  p{
-    margin-left: -2em;
-    text-align: left;
     font-size: 1.25em;
   }
-}
 
-
-// navbar stuff
-
-// Center the links
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  z-index: 9999;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-.affix {
-  top: 0;
-  left:0;
-}
-
-
-// this gives the placeholder rows some height.
-.placeholder-row {
-    min-height: 2em;
-    padding-top: .25em;
-    color: white;
-    border: 1px solid white;
-}
-
-
-.team-header {
-  text-transform: uppercase;
-  padding-left: 2em;
+  /***************************/
+  /********Photo Bar********/
+  /***************************/
+#team-header {
   background-image: url(../images/photoBar/photoBarYellow.png);
   background-repeat:repeat;
-  height: 100%;
+  padding-bottom: .75em;
+
   h1 {
-    margin-top: .15em;
+    text-transform: uppercase;
     color: white;
-    font-size: 5em;
+    font-size: 6em;
     font-weight: 200;
-    // TODO use brand colors
+    text-align: center;
   }
+
+
+  img {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
 }
+
+
+
+
+.haydnTable td {
+ padding-top: 0;
+ padding-bottom: 0;
+ text-align: center;
+}
+
+
+#sandSpray {
+  background-image: url(../images/photoBar/photoBarYellow.png);
+  background-repeat:repeat;
+}
+
+
 
 .viewSpray {
   position: absolute;
@@ -184,25 +241,51 @@ img {
   position: absolute;
 }
 
-.yellowTextBox {
-  background-color: #cc9933;
-  padding: 2em;
-}
-
-.videoArrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 30%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  width: 15%;
-}
-
 .sandPaint {
+  padding-top: 1em;
+  padding-left: 1em;
   color: white;
   text-transform: uppercase;
+
 }
+
+.yellowTextBox {
+
+}
+
+.sandPaintText {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1em;
+  // line-height: 1.75em;
+}
+
+.sprayFade img {
+  width: 100%;
+}
+
+
+
+.slick-slider {
+  margin-bottom: -10px;
+}
+
+.sprayFade {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.sprayFadeVid {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+#trace {
+  background-image: url(../images/blueprint/blueprintBlack.png);
+  background-repeat:repeat;
+}
+
 
 .mapText {
   position: absolute;
@@ -212,22 +295,30 @@ img {
   transform: translate(-50%, -50%);
   margin-top: 1em;
   font-size: 2em;
-  z-index: 5000;
+  z-index: 1;
   color: white;
   text-transform: uppercase;
 }
 
+#mapAnchor {
+  background-color: black;
+  margin: .5em;
+
+}
+
 .pdxMap2 {
-  // position: absolute;
-  // margin-top: 5%;
+  position: relative;
+  margin-top: 0;
+}
+
+#bigMapModal {
+  z-index: 10;
 }
 
 .bluePrintYellow {
-  // position: absolute;
-  padding: 25px;
   width: 100%;
-  // z-index: 5000;
-  background-color: #cc9933;
+  background-image: url(../images/photoBar/photoBarYellow.png);
+  background-repeat:repeat;
   h3 {
     color: white;
     text-transform: uppercase;
@@ -236,35 +327,32 @@ img {
 }
 
 .graphiti {
-  z-index: 6000;
   background-color: white;
   padding: 1em;
 }
 
-.typography {
-  background-color: #cc9933;
-
-  // padding-top: 75px;
+#typography {
+  background-image: url(../images/photoBar/photoBarYellow.png);
+  background-repeat:repeat;
 
   h3 {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 3em;
   }
 
   p {
+    line-height: 1.5em;
     font-size: 1em;
-    padding: 4em;
     padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
 }
 
-.typographyImg {
+.typography-items {
   width: 100%;
-  height: auto;
-  margin: 0;
-
 }
 
 .oregonMap {
@@ -277,7 +365,10 @@ img {
 
 .benchImages {
   width: 100%;
-  height: auto;
+}
+
+.lampImg {
+  width: 100%;
 }
 
 .onSet {
@@ -300,50 +391,233 @@ img {
   }
 }
 
-.whiteBox {
+#stoppingToStart {
   background-color: #fff;
+  padding-bottom: 1em;
   h3 {
-    color: #cc9933;
-    padding: 1em;
+      color: #cc9933;
+      padding: 1em 1.75em;
   }
   p {
-    padding: 2em;
+    padding: 2em 3em;
   }
+
+}
+
+
+  /***************************/
+  /********Video Credits********/
+  /***************************/
+table {
+  td {
+    padding-top: .75em;
+    padding-left: 2em;
+    padding-bottom: .75em;
+  }
+}
+
+
+#leoLogo {
+  padding-top: 2em;
+}
+
+#leoName {
+  width: 3em;
+  margin-left: 1em;
+}
+
+#lanskyLogo {
+  width: 85%;
+  padding-top: 6em;
 }
 
 .creditWhite {
   background-color: #fff;
+  margin: 0;
 }
 
+//leo logo and stuff//
 .creditImg {
-  width: 150px;
+  width: 120px;
 }
 
-.instaPics {
-  list-style: none;
+/***************************/
+/******Nature and Thank You**/
+/***************************/
 
-  li {
-  display: inline-block;
-  }
-  .smallPics {
-    width: 145px;
-  }
+
+.smallPics {
+  width: 100%;
+}
+
+#nature {
+  background-image: url(../images/photoBar/photoBarYellow.png);
+  background-repeat:repeat;
 }
 
 .natureYellow {
-  background-color: #cc9933;
+
+  padding: .5em 1em 1em 1em;
+  height: auto;
+  h3 {
+    color: white;
+  }
 }
 
 
 
+#thankYou {
+  background-color: #303030;
+
+  .thankYou {
+    text-transform: uppercase;
+    color: white;
+    font-size: 8em;
+    font-weight: 200;
+    text-align: center;
+    padding-top: .75em;
+    // max-width: 679px;
+    // TODO use brand colors
+  }
+}
+  .naturePics {
+    display: inline-block;
+    width: 100%;
+  }
+
+
+
+  /***************************/
+  /******Footer***************/
+  /***************************/
 
 .footer {
   p {
+    background-color: black;
     color: white;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+  }
+}
+
+  /***************************/
+  /******MEDIA QUERIES************/
+  /***************************/
+  @media screen and (max-width: 1700px) {
+    #team-header {
+      h1 {
+        font-size: 3em;
+        font-weight: 200;
+        text-align: center;
+    }
+  }
+}
+
+
+ @media screen and (max-width: 1422px) {
+
+   #thankYou {
+     .thankYou {
+       font-size: 6em;
+       padding-top: .3em;
+
+      }
+    }
+  }
+
+
+@media screen and (max-width: 767px) {
+  #theNav {
+    font-size: 1em;
+    border: 0px;
+    width: 30%;
+    padding-left: 1em;
+  }
+
+
+  .navbar-toggle {
+    float: left;
+  }
+
+  .mapText {
+    position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    z-index: 6000;
+    margin-top: 1em;
+    font-size: 1em;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+  }
+  #thankYou {
+    .thankYou {
+      font-size: 3em;
+      padding-top: .15em;
+
+     }
+   }
+
+}
+
+@media screen and (max-width: 532px) {
+
+    .haydn1Quote {
+      font-size: 1em;
+    }
+
+    .colorText {
+      font-size: 1em;
+    }
+    .author {
+        font-size: .75em;
+      }
+
+      #leoLogo {
+        padding-left: 3em;
+      }
+      #lanskyLogo {
+        padding-left: 3em;
+      }
+
+}
+
+
+@media screen and (max-width: 376px) {
+  #leoLogo {
+    padding-left: 2em;
+  }
+  #leoName {
+    padding-left: 2em;
+    width: 5em;
+  }
+  #lanskyLogo {
+      padding-left: 2em;
+
+  }
+  .pianoTeaser {
+    padding-top: 1em;
+    max-width: 50%;
+  }
+
+  }
+
+
+
+@media screen and (min-width: 1300px) {
+
+  #typography {
+
+    p {
+      line-height: 1.5em;
+      font-size: 1.15em;
+      padding-top: 1.5em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+
   }
 }
