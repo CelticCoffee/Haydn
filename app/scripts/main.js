@@ -20,7 +20,8 @@ $(document).ready(function(){
   });
 
   $('.studioPics').slick({
-    autoplay: true
+    autoplay: true,
+    infinite: true
   });
 
   $('.bigMap-slideshow').slick({
